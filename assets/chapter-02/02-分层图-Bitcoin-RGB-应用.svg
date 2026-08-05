@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#030806"/>
+      <stop offset="0.55" stop-color="#07150f"/>
+      <stop offset="1" stop-color="#020504"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#d6a24a"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="110" y="105" fill="#d6a24a" font-family="Georgia, 'Songti SC', serif" font-size="42" letter-spacing="4">ONE SECURITY ANCHOR</text>
+  <text x="110" y="152" fill="#9c8458" font-family="'Songti SC', serif" font-size="24">Bitcoin 不负责所有应用细节，只负责最重要的安全与结算</text>
+
+  <g font-family="'Songti SC', 'Noto Serif CJK SC', serif">
+    <rect x="180" y="585" width="1240" height="175" rx="16" fill="#091a12" stroke="#d6a24a" stroke-width="4"/>
+    <rect x="180" y="360" width="1240" height="175" rx="16" fill="#0b2017" stroke="#d6a24a" stroke-width="4"/>
+    <rect x="180" y="185" width="1240" height="115" rx="16" fill="#10291d" stroke="#d6a24a" stroke-width="4"/>
+
+    <text x="230" y="242" fill="#e9bf69" font-size="34">应用体验层</text>
+    <text x="230" y="284" fill="#bd9a5a" font-size="22">Wallet · Lightning · LSP · DEX · Merchant</text>
+    <text x="965" y="248" fill="#e9bf69" font-size="23">把协议能力变成用户可完成的任务</text>
+
+    <text x="230" y="420" fill="#e9bf69" font-size="34">RGB 资产状态层</text>
+    <text x="230" y="465" fill="#bd9a5a" font-size="22">客户端验证 · 一次性封印 · Schema · 状态转移</text>
+    <text x="965" y="425" fill="#e9bf69" font-size="23">表达资产规则、所有权与状态历史</text>
+
+    <text x="230" y="645" fill="#e9bf69" font-size="34">Bitcoin 基础层</text>
+    <text x="230" y="692" fill="#bd9a5a" font-size="22">交易图 · UTXO · PoW · 承诺 · 最终结算</text>
+    <text x="965" y="650" fill="#e9bf69" font-size="23">提供安全锚、时间顺序与双花防护</text>
+  </g>
+
+  <g fill="none" stroke="#d6a24a" stroke-width="4" marker-end="url(#arrow)" filter="url(#glow)">
+    <path d="M800 585 L800 540"/>
+    <path d="M800 360 L800 305"/>
+  </g>
+  <g fill="#e9bf69" font-family="'Songti SC', serif" font-size="22" text-anchor="middle">
+    <text x="800" y="570">锚定与验证</text>
+    <text x="800" y="345">状态与流通</text>
+  </g>
+  <text x="800" y="835" text-anchor="middle" fill="#c9a15b" font-family="'Songti SC', serif" font-size="25" letter-spacing="3">不是复制一条链，而是把不同责任放在合适的层</text>
+</svg>
