@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07100d"/>
+      <stop offset="0.55" stop-color="#0d1b15"/>
+      <stop offset="1" stop-color="#020605"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5d887"/>
+      <stop offset="0.5" stop-color="#b98737"/>
+      <stop offset="1" stop-color="#6d481c"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .title { font: 700 34px "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #f3d58a; letter-spacing: 2px; }
+      .label { font: 700 25px "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #f4d98d; }
+      .body { font: 400 21px "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #d3c39b; }
+      .small { font: 400 18px "PingFang SC", "Noto Sans CJK SC", sans-serif; fill: #ad9b70; }
+      .card { fill: #0a1712; stroke: #6f5224; stroke-width: 2; }
+      .card.rgb { fill: #101d16; stroke: #c59b43; stroke-width: 3; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <path d="M0 790 C260 720 440 850 730 775 S1240 700 1600 790" fill="none" stroke="#183126" stroke-width="3" opacity="0.65"/>
+  <path d="M0 835 C300 760 480 875 780 810 S1260 750 1600 840" fill="none" stroke="#12251d" stroke-width="2" opacity="0.8"/>
+
+  <text x="800" y="65" text-anchor="middle" class="title">用户需求与资产承载路径的对照</text>
+  <text x="800" y="102" text-anchor="middle" class="small">没有 RGB，需求不会消失，只会被重新分配</text>
+
+  <text x="192" y="145" text-anchor="middle" class="label">用户问题</text>
+  <text x="640" y="145" text-anchor="middle" class="label">承载路径</text>
+  <text x="1277" y="145" text-anchor="middle" class="label">主要代价</text>
+
+  <!-- 用户需求 -->
+  <rect x="55" y="350" width="275" height="175" rx="18" class="card"/>
+  <circle cx="192" cy="401" r="31" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M192 382 L192 420 M173 401 L211 401" stroke="#d3b45e" stroke-width="3"/>
+  <text x="192" y="463" text-anchor="middle" class="label">用户资产需求</text>
+  <text x="192" y="498" text-anchor="middle" class="small">安全 · 状态 · 隐私 · 可用</text>
+
+  <!-- 四条承载路径 -->
+  <rect x="390" y="180" width="500" height="120" rx="17" class="card"/>
+  <circle cx="430" cy="240" r="24" fill="none" stroke="#c9a04b" stroke-width="3"/>
+  <path d="M416 240 h28 M430 226 v28" stroke="#c9a04b" stroke-width="3"/>
+  <text x="470" y="230" class="label">公开链上记录</text>
+  <text x="470" y="267" class="body">公开可验证，恢复路径直观</text>
+
+  <rect x="390" y="340" width="500" height="120" rx="17" class="card"/>
+  <circle cx="430" cy="400" r="24" fill="none" stroke="#c9a04b" stroke-width="3"/>
+  <path d="M410 410 L430 385 L450 410" fill="none" stroke="#c9a04b" stroke-width="3"/>
+  <text x="470" y="390" class="label">侧链 / 联邦 / 独立网络</text>
+  <text x="470" y="427" class="body">独立规则，拥有专用空间</text>
+
+  <rect x="390" y="500" width="500" height="120" rx="17" class="card"/>
+  <circle cx="430" cy="560" r="24" fill="none" stroke="#c9a04b" stroke-width="3"/>
+  <rect x="416" y="548" width="28" height="23" rx="4" fill="none" stroke="#c9a04b" stroke-width="3"/>
+  <path d="M421 548 v-11 h18 v11" fill="none" stroke="#c9a04b" stroke-width="3"/>
+  <text x="470" y="550" class="label">交易所 / 托管平台</text>
+  <text x="470" y="587" class="body">账户体验和流动性更集中</text>
+
+  <rect x="390" y="660" width="500" height="120" rx="17" class="card rgb"/>
+  <circle cx="430" cy="720" r="24" fill="none" stroke="#e0bd64" stroke-width="3"/>
+  <path d="M418 726 L430 703 L442 726 L430 738 Z" fill="none" stroke="#e0bd64" stroke-width="3"/>
+  <text x="470" y="710" class="label">RGB 客户端验证路径</text>
+  <text x="470" y="747" class="body">Bitcoin 安全锚 + 资产状态</text>
+
+  <!-- 右侧代价 -->
+  <rect x="1010" y="180" width="535" height="120" rx="17" class="card"/>
+  <text x="1050" y="230" class="label">链上成本</text>
+  <text x="1050" y="267" class="body">空间、公开性与扩展性压力</text>
+
+  <rect x="1010" y="340" width="535" height="120" rx="17" class="card"/>
+  <text x="1050" y="390" class="label">新增信任</text>
+  <text x="1050" y="427" class="body">验证者、桥接、升级与退出假设</text>
+
+  <rect x="1010" y="500" width="535" height="120" rx="17" class="card"/>
+  <text x="1050" y="550" class="label">托管责任</text>
+  <text x="1050" y="587" class="body">控制权、冻结、偿付与赎回规则</text>
+
+  <rect x="1010" y="660" width="535" height="120" rx="17" class="card rgb"/>
+  <text x="1050" y="710" class="label">生态建设</text>
+  <text x="1050" y="747" class="body">资料、钱包、互操作与流动性</text>
+
+  <text x="800" y="825" text-anchor="middle" class="small">判断标准不是谁胜出，而是谁承担什么</text>
+  <text x="55" y="870" class="small">RGB Value Analysis · 第 04 篇</text>
+</svg>
