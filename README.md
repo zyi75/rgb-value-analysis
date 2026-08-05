@@ -1,5 +1,7 @@
 # 《RGB Value Analysis》
 
+![RGB Value Analysis 封面](assets/cover/RGB-Value-Analysis-封面母版.png)
+
 ## 重新理解 Bitcoin 应用层
 
 > 从协议、基础设施、流动性到应用，系统理解 RGB 生态如何构建 Bitcoin 原生金融网络。
