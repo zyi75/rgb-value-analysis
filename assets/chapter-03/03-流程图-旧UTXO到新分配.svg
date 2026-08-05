@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#030806"/><stop offset="0.55" stop-color="#07150f"/><stop offset="1" stop-color="#020504"/></linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#d6a24a"/></marker>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <text x="110" y="105" fill="#d6a24a" font-family="Georgia, 'Songti SC', serif" font-size="42" letter-spacing="4">UTXO TO NEW RIGHTS</text>
+  <text x="110" y="152" fill="#9c8458" font-family="'Songti SC', serif" font-size="24">消费旧的可花费单元，创建新的控制权与资产分配</text>
+
+  <g fill="none" stroke="#d6a24a" stroke-width="4" marker-end="url(#arrow)" filter="url(#glow)">
+    <path d="M330 475 C390 365 420 365 485 475"/>
+    <path d="M700 475 C760 365 790 365 855 475"/>
+    <path d="M1070 475 C1130 365 1160 365 1225 475"/>
+  </g>
+  <g font-family="'Songti SC', 'Noto Serif CJK SC', serif" text-anchor="middle">
+    <g transform="translate(130 350)">
+      <circle cx="100" cy="120" r="100" fill="#07150f" stroke="#d6a24a" stroke-width="4"/>
+      <path d="M45 92 Q100 48 155 92 L145 165 Q100 205 55 165 Z" fill="none" stroke="#e9bf69" stroke-width="5"/>
+      <circle cx="100" cy="120" r="16" fill="none" stroke="#e9bf69" stroke-width="4"/>
+      <text x="100" y="270" fill="#e9bf69" font-size="31">旧 UTXO</text>
+      <text x="100" y="310" fill="#9c8458" font-size="22">可花费的控制单元</text>
+    </g>
+    <g transform="translate(500 350)">
+      <circle cx="100" cy="120" r="100" fill="#07150f" stroke="#d6a24a" stroke-width="4"/>
+      <path d="M55 80 H145 V160 H55 Z" fill="none" stroke="#e9bf69" stroke-width="5"/>
+      <path d="M75 80 V58 M125 80 V58" stroke="#e9bf69" stroke-width="5"/>
+      <circle cx="100" cy="120" r="14" fill="#e9bf69"/>
+      <text x="100" y="270" fill="#e9bf69" font-size="31">输入 / 花费</text>
+      <text x="100" y="310" fill="#9c8458" font-size="22">关闭旧封印</text>
+    </g>
+    <g transform="translate(870 350)">
+      <circle cx="100" cy="120" r="100" fill="#07150f" stroke="#d6a24a" stroke-width="4"/>
+      <path d="M48 120 Q100 62 152 120 Q100 178 48 120Z" fill="none" stroke="#e9bf69" stroke-width="5"/>
+      <circle cx="100" cy="120" r="13" fill="#e9bf69"/>
+      <text x="100" y="270" fill="#e9bf69" font-size="31">新输出</text>
+      <text x="100" y="310" fill="#9c8458" font-size="22">付款 + 找零</text>
+    </g>
+    <g transform="translate(1240 350)">
+      <circle cx="100" cy="120" r="100" fill="#07150f" stroke="#d6a24a" stroke-width="4"/>
+      <path d="M52 85 H148 M52 120 H148 M52 155 H148" stroke="#e9bf69" stroke-width="5"/>
+      <circle cx="78" cy="85" r="7" fill="#e9bf69"/><circle cx="78" cy="120" r="7" fill="#e9bf69"/><circle cx="78" cy="155" r="7" fill="#e9bf69"/>
+      <text x="100" y="270" fill="#e9bf69" font-size="31">RGB 分配</text>
+      <text x="100" y="310" fill="#9c8458" font-size="22">新持有权利</text>
+    </g>
+  </g>
+  <text x="800" y="820" text-anchor="middle" fill="#c9a15b" font-family="'Songti SC', serif" font-size="25" letter-spacing="3">钱包显示余额，底层转移的是可验证的权利单元</text>
+</svg>
